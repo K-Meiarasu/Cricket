@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Cricket League</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="./images/Cricket_03.svg">
+        <script src="./script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="fl">
+            <div id="card">
+                <h1 style="text-align: center; text-shadow: 0.2vw 0.1vw wheat;">SUPER CRICKET LEAGUE&#127951;</h1>
+                <div class="que">
+                    <label for="in">Your Name</label>
+                    <input type="text" id="input" name="in" required=""><br><br><br>
+                    <button class="toss" type="submit" onclick="bat()">BAT</button>
+                    <button class="toss" type="submit" onclick="bowl()">BOWL</button>
+                </div>
+            </div>
+            <div id="bat">
+                <div class="window">
+                    <div class="c1">
+                        <h3 id="target"></h3>
+                    </div>
+                    <div class="c2">
+                        <div class="left">
+                            <h4 id="run"></h4>
+                        </div>
+                        <div class="right">
+                            <h4 id="comp"></h4>
+                        </div>
+                    </div>
+                    <div class="c3">
+                        <h4 id="total"></h4>
+                    </div>
+                    <div class="c4">
+                        <h4 id="comm" style="color: red;"></h4>
+                    </div>
+                    <div class="c5">
+                        <button class="ball" onclick="one()">1</button>
+                        <button class="ball" onclick="two()">2</button>
+                        <button class="ball" onclick="three()">3</button>
+                        <button class="ball" onclick="four()">4</button>
+                        <button class="ball" onclick="five()">5</button>
+                        <button class="ball" onclick="six()">6</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bowl">
+                <div class="window">
+                    <div class="c1">
+                        <h3 id="defend"></h3>
+                    </div>
+                    <div class="c2">
+                        <div class="left">
+                            <h4 id="extra"></h4>
+                        </div>
+                        <div class="right">
+                            <h4 id="random"></h4>
+                        </div>
+                    </div>
+                    <div class="c3">
+                        <h4 id="sum"></h4>
+                    </div>
+                    <div class="c4">
+                        <h4 id="com" style="color: red;"></h4>
+                    </div>
+                    <div class="c5">
+                        <button class="ball" onclick="oneb()">1</button>
+                        <button class="ball" onclick="twob()">2</button>
+                        <button class="ball" onclick="threeb()">3</button>
+                        <button class="ball" onclick="fourb()">4</button>
+                        <button class="ball" onclick="fiveb()">5</button>
+                        <button class="ball" onclick="sixb()">6</button>
+                    </div>
+                </div>
+            </div>
+            <div id="succ">
+                <h2>Yayy...you won &#129321;</h2><br>
+                <h2>SCOREBOARD</h2><hr width="30%">
+                <h3 id="sb"></h3>
+                <h3 id="sb2"></h3>
+            </div>
+            <div id="fail">
+                <h2>It's okay, You tried... &#129301;</h2><br>
+                <h2>SCOREBOARD</h2><hr width="30%">
+                <h3 id="sb3"></h3>
+                <h3 id="sb4"></h3>
+            </div>
+        </div>
+    </body>
+</html>

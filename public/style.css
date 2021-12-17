@@ -1,0 +1,190 @@
+body{
+    background-image: url("https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL3Jlc291cmNlcy9HZW9tZXRyaWMtQmFja2dyb3VuZC1QYXR0ZXJucy1QcmV2aWV3LTJiLmpwZw==");
+    margin-top: 12vh;
+    width: auto;
+    height: 100%;
+    position: relative;
+    margin-left: 25vw;
+    font-family: 'Cabin', sans-serif;
+}
+#card{
+    position: auto;
+    display: block;
+    padding: 3vw;
+    text-align: center;
+    border-radius: 2vw;
+    flex-wrap: wrap;
+    box-shadow: 0 2vw 2vw 0.5vw black;
+    width: 45vw;
+    height: 40vh;
+    background-image: linear-gradient(to bottom,rgb(219, 219, 219),rgb(98, 255, 234));
+}
+.window{
+    width: 45vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.c1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.c2{
+    display: flex;
+    text-align: center;
+    font-size: 2vw;
+    flex-direction: row;
+    padding: 2%;
+    border-radius: 5%;
+    height: 12vh;
+    grid-gap: 1vw;
+}
+.c3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.c4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.c5{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 2vw;
+}
+.left{
+    width: 50%;
+    background-image: linear-gradient(to right,white,grey);
+    border-radius: 0.5vw;
+}
+.right{
+    width: 50%;
+    background-image: linear-gradient(to left,white,grey);
+    border-radius: 0.5vw;
+}
+#bat{
+    position: auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2vw 0.5vw black;
+    width: 45vw;
+    height: 48vh;
+    background-image: linear-gradient(to bottom,rgb(219, 219, 219),rgb(98, 255, 234));
+}
+#bowl{
+    position: auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2vw 0.5vw black;
+    width: 45vw;
+    height: 48vh;
+    background-image: linear-gradient(to bottom,rgb(219, 219, 219),rgb(98, 255, 234));
+}
+#succ{
+    position: auto;
+    display: block;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2vw 0.5vw black;
+    width: 100vw;
+    height: 48vh;
+    background-image: linear-gradient(to bottom,rgb(219, 219, 219),rgb(98, 255, 234));
+}
+#fail{
+    position: auto;
+    display: block;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2vw 0.5vw black;
+    width: 100vw;
+    height: 48vh;
+    background-image: linear-gradient(to bottom,rgb(219, 219, 219),rgb(98, 255, 234));
+}
+label{
+    font-size: 3vw;
+    padding: 2vw;
+    text-shadow: 0.2vw 0.1vw whitesmoke;
+}
+input[type=text]{
+    width: 15vw;
+    height: 1vh;
+    padding: 1.2vw 2vw;
+    margin: 0.8vw 0;
+    border-radius: 0.5vw;
+    background-image: linear-gradient(to top left,rgb(104, 104, 104),white);
+    border-color: black;
+    color: black;
+    font-size: 2vw;
+}
+.toss{
+    background-color: rgb(235, 75, 27);
+    color: white;
+    width: 20%;
+    padding: 1vw;
+    margin: 1vw;
+    cursor: pointer;
+    font-size: 2vw;
+    border-radius: 7%;
+    box-shadow: 0 0.5vw 0.5vw 0 black;
+}
+.toss:hover{
+    background-color: rgb(235, 124, 91);
+    font-weight: bolder;
+    text-shadow: 0.2vw 0.1vw black;
+    width: 21%;
+}
+.fl{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    height: 48vh;
+    text-align: center;
+}
+.ball{
+    background-color: red;
+    color: white;
+    width: 3vw;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 20vw;
+    font-weight: bold;
+}
+@media only screen and (max-width: 900px){
+    *{
+        width: auto;
+        height: 100%;
+        position: relative;
+    }
+    label{
+        font-size: 3vw;
+    }
+    .toss{
+        width: 10vw;
+        height: 4vh;
+        border-radius: 1vw;
+    }
+    .ball{
+        width: 10vw;
+        height: 4vh;
+        border-radius: 20vw;
+    }
+    hr{
+        display: none;
+    }
+    #succ{
+        height: 30%;
+    }
+    #fail{
+        height: 30%;
+    }
+}
