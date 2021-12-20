@@ -7,9 +7,19 @@ window.onload=function(){
     document.getElementById("fail").style.display="none";
     document.getElementById("bat").style.display="none";
     document.getElementById("bowl").style.display="none";
+    document.getElementById("ins").style.display="none";
+}
+function home(){
+    document.getElementById("succ").style.display="none";
+    document.getElementById("fail").style.display="none";
+    document.getElementById("bat").style.display="none";
+    document.getElementById("bowl").style.display="none";
+    document.getElementById("ins").style.display="none";
+    document.getElementById("card").style.display="block";
 }
 function bat(){
     document.getElementById("succ").style.display="none";
+    document.getElementById("ins").style.display="none";
     document.getElementById("fail").style.display="none";
     document.getElementById("bowl").style.display="none";
     document.getElementById("card").style.display="none";
@@ -21,12 +31,25 @@ function bat(){
 function bowl(){
     document.getElementById("succ").style.display="none";
     document.getElementById("card").style.display="none";
+    document.getElementById("ins").style.display="none";
     document.getElementById("fail").style.display="none";
     document.getElementById("bat").style.display="none";
     document.getElementById("bowl").style.display="block";
     document.getElementById("defend").innerHTML="Target : "+target
     var pname=document.getElementById("input").value
     user=pname
+}
+function ins(){
+    document.getElementById("succ").style.display="none";
+    document.getElementById("card").style.display="none";
+    document.getElementById("bowl").style.display="none";
+    document.getElementById("fail").style.display="none";
+    document.getElementById("bat").style.display="none";
+    document.getElementById("ins").style.display="block";
+    document.getElementById("ins1").innerHTML="In Batting Mode, use RUNS to chase the target set."
+    document.getElementById("ins2").innerHTML="In Bowling Mode, you are about to defend your target."
+    document.getElementById("ins3").innerHTML="Click on the BALL icon with runs, to play."
+    document.getElementById("ins4").innerHTML="ALL THE BEST !"
 }
 function one(){
     var run=1
