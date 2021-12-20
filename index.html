@@ -19,12 +19,13 @@
                     <input type="text" id="input" name="in" required=""><br><br><br>
                     <button class="toss" type="submit" onclick="bat()">BAT</button>
                     <button class="toss" type="submit" onclick="bowl()">BOWL</button>
+                    <button class="inst" type="submit" onclick="ins()">Instructions>></button>
                 </div>
             </div>
             <div id="bat">
                 <div class="window">
                     <div class="c1">
-                        <h3 id="target"></h3>
+                        <h2 id="target"></h2>
                     </div>
                     <div class="c2">
                         <div class="left">
@@ -35,10 +36,10 @@
                         </div>
                     </div>
                     <div class="c3">
-                        <h4 id="total"></h4>
+                        <h2 id="total"></h2>
                     </div>
                     <div class="c4">
-                        <h4 id="comm" style="color: red;"></h4>
+                        <h3 id="comm" style="color: red;"></h3>
                     </div>
                     <div class="c5">
                         <button class="ball" onclick="one()">1</button>
@@ -53,7 +54,7 @@
             <div id="bowl">
                 <div class="window">
                     <div class="c1">
-                        <h3 id="defend"></h3>
+                        <h2 id="defend"></h2>
                     </div>
                     <div class="c2">
                         <div class="left">
@@ -64,10 +65,10 @@
                         </div>
                     </div>
                     <div class="c3">
-                        <h4 id="sum"></h4>
+                        <h2 id="sum"></h2>
                     </div>
                     <div class="c4">
-                        <h4 id="com" style="color: red;"></h4>
+                        <h3 id="com" style="color: red;"></h3>
                     </div>
                     <div class="c5">
                         <button class="ball" onclick="oneb()">1</button>
@@ -78,6 +79,14 @@
                         <button class="ball" onclick="sixb()">6</button>
                     </div>
                 </div>
+            </div>
+            <div id="ins">
+                <h2 style="color: red;">INSTRUCTIONS</h2><hr><br>
+                <h3 id="ins1"></h3>
+                <h3 id="ins2"></h3>
+                <h3 id="ins3"></h3><br>
+                <h3 id="ins4"></h3>
+                <button class="inst" type="submit" onclick="home()">Home</button>
             </div>
             <div id="succ">
                 <h2>Yayy...you won &#129321;</h2><br>
